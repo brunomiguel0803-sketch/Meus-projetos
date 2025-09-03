@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .navbar {
@@ -12,17 +18,45 @@ body {
   height: 100px;
   background: cadetblue;
   justify-content: center;
-  align-items: center
+  align-items: center;
+}
+
+/*.logo {
+  flex: 20%;
+  margin-left: 10%;
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  border: 1px solid red;
+  text-align: center;
+  color: #180F4A;
+  font-size: 34px;
+} */
+
+.menu {
+  flex: 70%;
+  border: 1px solid green;
+  text-align: right;
+  padding: 20px;
+  
 }
 
 .logo {
-  flex: 20%;
+  font-family: "Oswald", sans-serif;
+  font-size: 34px;
+  color: #180F4A;
   border: 1px solid red;
-  text-align: center;
+  margin-left: 10%;
+  /* padrão para telas grandes */
 }
 
-.menu {
-  flex: 80%;
-  border: 1px solid green;
-  text-align: right;
+
+/* Para telas pequenas (celulares) */
+@media (max-width: 600px) {
+  .logo {
+    margin-left: 5%;
+    /* reduz a margem no celular */
+    font-size: 24px;
+    /* opcional: diminuir a fonte também */
+  }
 }
