@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
+  /* código obrigatório em todos sites */
   box-sizing: border-box;
 }
 
 body {
+  /* obrigatório pra deixar a margem ocupando 0 de espaço */
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -13,33 +15,107 @@ body {
 }
 
 .navbar {
+  /* pra mexer no posicionamento de todas div dentro de .navbar*/
   display: flex;
   flex-flow: row wrap;
   height: 100px;
-  background: cadetblue;
+  /*background: cadetblue;*/
+  /* pra deixar todas as divs na div .navbar alinhado HORIZONTALMENTE */
   justify-content: center;
+  /* pra deixar cada uma das divs alinhado VERTICALMENTE */
   align-items: center;
 }
 
-/*.logo {
+.logo {
+  /* pra mexer no posicionamento da .logo em relação a div .navbar */
   flex: 20%;
   margin-left: 10%;
   font-family: "Oswald", sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
+  /* pra deixar todo texto da div .logo tudo centralizado */
   text-align: center;
   color: #180F4A;
   font-size: 34px;
-} */
+}
 
 .menu {
+  /* pra mexer no posicionamento do menu em relação a div .navbar */
   flex: 70%;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
+  /* pra alinhar o texto do .menu na div .navbar */
   text-align: right;
   padding: 20px;
-  
 }
+
+/* menu a vai editar somente os links clicáveis da div .menu */
+.menu a {
+  color: #180F4A;
+  /* pra remover a linha debaixo nos links */
+  text-decoration: none;
+  font-size: 20px;
+  /* pra dar espaços nos links */
+  padding: 20px 16px;
+}
+
+/* menu a:hover vai editar somente os links da div .menu quando o mouse passar por cima deles */
+.menu a:hover {
+  color: #FF2978;
+  /* pra deixar uma linha em cima de cada botão quando o mouse passr por cima */
+  border-top: 4px solid #180F4A;
+}
+
+/* ID pra editar somente o botao "Fale Conosco" no .navbar no html */
+#botao {
+  background: #180F4A;
+  padding: 10px 25px;
+  color: white;
+  /* pra arredondar levemente as quinas/bordas do botão */
+  border-radius: 5px;
+  /* pra afastar um tanto da margem da direita */
+  margin-right: 10%;
+  /* pra afastar dos botões da esquerda */
+  margin-left: 5%;
+}
+
+/* ID pra mexer no botão "Fale Conosco" quando o mouse estiver em cima */
+#botao:hover {
+  /* pra remover o border-top (linha em cima) que foi colocado nos outros botões da esquerda */
+  border: none;
+  background: #FF2978;
+}
+
+.header {
+  display: flex;
+  /* pra dizer que vai ser do tipo linha e que vai quebrar pra proxima linha */
+  flex-flow: row wrap;
+  height: 600px;
+  background: gray;
+}
+
+/* é a parte onde fica a chamada de texto + imagem mais importantes do site */
+.headline {
+  /* pra determinar a posição facilmente e usar 40% so nessa div so do texto */
+  flex: 40%;
+  /* pra afastar a div .headline da margem da esquerda */
+  margin-left: 10%;
+  border: 1px solid black;
+}
+
+.img-headline {
+  /* pra determinar a posição facilmente e usar 40% so nessa div so do texto */
+  flex: 40%;
+    /* pra afastar a div .img-headline da margem da direita */
+  margin-right: 10%;
+  border: 1px solid deeppink;
+}
+
+
+
+
+
+
+
+
 
 
 /* Para telas pequenas (celulares) */
