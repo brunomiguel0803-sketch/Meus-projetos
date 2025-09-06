@@ -41,15 +41,6 @@ body {
   
 }
 
-.logo {
-  font-family: "Oswald", sans-serif;
-  font-size: 34px;
-  color: #180F4A;
-  border: 1px solid red;
-  margin-left: 10%;
-  /* padrão para telas grandes */
-}
-
 
 /* Para telas pequenas (celulares) */
 @media (max-width: 600px) {
